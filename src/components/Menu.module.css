@@ -1,0 +1,58 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.menu_image {
+  width: 100%;
+  height: 160px;
+}
+
+.menu_image img {
+  width: inherit;
+  height: inherit;
+}
+
+.menu_desc {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.menu_name,
+.menu_price,
+.menu_add {
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+  padding: 4px;
+}
+
+.cartButton {
+  border: none;
+  background-color: rgb(149, 240, 240);
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.cartButton:hover{
+    cursor: pointer;
+}
+
+.menu_items {
+  background-image: url("../assets/menuImage2.jpg");
+  backdrop-filter: blur(100px); /* Supported in Chrome 76 */
+
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin: 40px 10px; */
+  flex-wrap: wrap;
+}

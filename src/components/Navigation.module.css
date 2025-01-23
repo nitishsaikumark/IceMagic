@@ -1,0 +1,43 @@
+.navigation {
+    background-color: transparent;
+    display: flex;
+    color: azure;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.changebg {
+    background-color: wheat;
+}
+
+.navlist {
+    margin: 0;
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.navitem {
+    display: inline;
+    margin: 0 32px;
+    background: none;
+    color: azure;
+    border: none;
+}
+
+.navitem:hover {
+    cursor: pointer;
+}
+
+.i_left {
+    flex:1;
+    margin-left: 64px;
+}
+
+.i_right {
+    flex:1;
+}

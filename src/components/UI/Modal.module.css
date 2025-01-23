@@ -1,0 +1,144 @@
+.back_drop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.75);
+    z-index: 2;
+}
+
+.modal {
+    position: fixed;
+    top:10%;
+    left: 10%;
+    width: 60%;
+     /* height: 80%;  */
+    background-color: whitesmoke;
+    z-index: 30;
+    overflow: auto;
+    padding: 16px 12px;
+    border-radius: 6px;
+    /* animation: slide-down 300ms ease-out forwards; */
+}
+
+.modal_content {
+    overflow-y: scroll;
+    max-height: 20rem;
+}
+
+.m{
+    display: flex;
+}
+
+.m_left{
+    flex:1;
+    margin-left: 12px;
+}
+
+.m_right {
+    flex:2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.desc_price{
+    color:#8a2b06;
+    font-weight: 700;
+}
+
+.desc_amount {
+    border: 1px solid black;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight:bold;
+}
+
+.itemName {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.boundary {
+    height: 2px;
+    background-color:#8a2b06;  
+    margin: 12px 16px;  
+}
+
+.two_button {
+    border: 1px solid #8a2b06;
+    color: #8a2b06;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.remove_button ,.add_button {
+    border: none;
+    background-color: transparent;
+    padding: 6px 12px;
+    font-size: 20px;
+    color: #8a2b06;
+}
+
+.remove_button:hover, .add_button:hover{
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cart_buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px;
+}
+
+.order_button {
+    margin: 0 12px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #8a2b06;
+    color: beige;
+    border: none;
+}
+.close_button{
+    margin: 0 12px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: #8a2b06;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+}
+
+.order_button:hover{
+    cursor: pointer;
+    background-color: #5a1a01;
+}
+
+.close_button:hover{
+    background-color: #8a2b06;
+    color: beige;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .modal {
+      width: 40rem;
+      left: calc(50% - 20rem);
+    }
+  }

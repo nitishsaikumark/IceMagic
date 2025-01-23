@@ -1,0 +1,31 @@
+.App {
+  background-image: url('./assets/chocoFood.jpg');
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  margin: 0;
+}
+
+.b {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.b_left {
+  flex: 1;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.b_left h1{
+  font-family: 'Yellowtail', cursive;
+  font-size:100px;
+}
+
+.b_right {
+  flex: 1;
+}
+
